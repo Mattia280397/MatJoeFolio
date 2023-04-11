@@ -1,0 +1,7 @@
+{
+ "userlist":[
+    { "username":"pippo","email": "xds@xd.it", "password": "PasswordLunga"},
+    { "username":"paperino","email": "chiocciola@mail.it", "password": "PasswordMolto" },
+    { "username":"amico","email": "user@mail.net", "password": "PasswordAncora" }
+  ]
+}
