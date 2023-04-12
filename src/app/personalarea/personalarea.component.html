@@ -1,33 +1,37 @@
 <div class="container-fluid my-5 p-5">
-    <h1 class="text-center my-2 p-5">Personal Area</h1>
-    <div class="container">
+  <h1 class="text-center my-2 p-5">Personal Area</h1>
+  <div class="container">
 <h2 class="text-center mb-5">Benvenuto</h2>
 <div class="row justify-content-around">
-    <div class="col-auto">
-      <div class="card">
-        <img
-          src="assets/images/Profile.png"
-          class="card-img-top"
-          alt="Nome"
-        />
-        <div class="card-body">
-          <h3 class="card-title">{{username}}</h3>
-          <p class="card-text"></p>
-          <dl>
-            <dd>Full name: {{username}}</dd>
-            <dd>Age: 21</dd>
-            <dd>Occupation: Junior Web&App developer</dd>
-            <dd>City: Turin</dd>
-            <dd>Email {{email}}</dd>
-          </dl>
-          <a
-            routerLink="/payment"
-            class="btn btn-primary me-3"
-            >Vai a pagare</a
-          >
-          <a routerLink="/payment"
-          class="btn btn-primary" routerLink="/preventive">Vai al preventivo</a>
-        </div>
+  <div class="col-auto">
+    <div class="card">
+      <img
+        src="assets/images/Profile.png"
+        class="card-img-top"
+        alt="Nome"
+      />
+      <div class="card-body">
+        <h3 class="card-title">{{username}}</h3>
+        <p class="card-text"></p>
+        <dl>
+          <dd>Full name: {{username}}</dd>
+          <dd>Age: 21</dd>
+          <dd>Occupation: Junior Web&App developer</dd>
+          <dd>City: Turin</dd>
+          <dd>Email {{email}}</dd>
+        </dl>
+        <a
+          routerLink="/payment"
+          class="btn btn-primary me-3"
+          >Vai a pagare</a
+        >
+        <a routerLink="/payment"
+        class="btn btn-primary  me-3" routerLink="/preventive">Vai al preventivo</a>
+        <a
+        (click)="Logout()"
+        class="btn btn-primary"
+        >Logout</a>
       </div>
     </div>
+  </div>
 </div>

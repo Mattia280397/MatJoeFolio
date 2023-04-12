@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-
+  isLogged:boolean=false;
+  ngDoCheck():void{
+    this.isLogged=JSON.parse(localStorage.getItem("isLogged") || 'false');
+  }
 }

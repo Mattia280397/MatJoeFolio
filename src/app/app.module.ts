@@ -26,8 +26,7 @@ import { PersonalareaComponent } from './personalarea/personalarea.component';
     HomeComponent,
     ContactUsComponent,
     PreventiveComponent,
-    PaymentComponent,
-    PersonalareaComponent
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

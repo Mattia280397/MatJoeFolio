@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
  export interface User {
@@ -49,7 +49,7 @@ export class LoginComponent {
     this.http.get<{userlist:User[]}>('../../assets/users.json').subscribe(users => {
       this.matchedUser = users.userlist.find(user => user.email === this.signEmail && user.password === this.loginpasswordts);
     if (this.matchedUser) {
-      localStorage.setItem('isLoggedIn', 'true');
+      localStorage.setItem('isLogged', JSON.stringify(true));
       localStorage.setItem('currentUser', JSON.stringify(this.matchedUser));
       this.MyRouter.navigateByUrl('/personalarea');
     } else {
