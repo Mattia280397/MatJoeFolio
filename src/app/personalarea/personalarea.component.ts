@@ -20,4 +20,10 @@ export class PersonalareaComponent {
     localStorage.setItem('isLogged', JSON.stringify(false));
     this.MyRouter.navigateByUrl('/home');
   }
+   GoToPreventivo(){
+    this.MyRouter.navigateByUrl('/preventive');
+  }
+  GoToPayment(){
+    this.MyRouter.navigateByUrl('/payment');
+  }
 }
