@@ -20,18 +20,18 @@
           <dd>City: Turin</dd>
           <dd>Email {{email}}</dd>
         </dl>
-        <a
-          routerLink="/payment"
-          class="btn btn-primary me-3"
-          >Vai a pagare</a
-        >
-        <a routerLink="/payment"
-        class="btn btn-primary  me-3" routerLink="/preventive">Vai al preventivo</a>
-        <a
-        (click)="Logout()"
-        class="btn btn-primary"
-        >Logout</a>
-      </div>
+      <a
+            (click)="GoToPayment()"
+            class="btn btn-primary me-3"
+            >Vai a pagare</a
+          >
+          <a
+          class="btn btn-primary  me-3" (click)="GoToPreventivo()">Vai al preventivo</a>
+          <a
+          (click)="Logout()"
+          class="btn btn-primary"
+          >Logout</a>
+        </div>
     </div>
   </div>
 </div>
