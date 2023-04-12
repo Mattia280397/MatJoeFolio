@@ -14,7 +14,6 @@ import { FooterComponent } from './footer/footer.component';
 import { PreventiveComponent } from './preventive/preventive.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PaymentComponent } from './payment/payment.component';
-import { PersonalareaComponent } from './personalarea/personalarea.component';
 
 @NgModule({
   declarations: [
