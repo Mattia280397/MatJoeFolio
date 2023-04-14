@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 @Component ({
@@ -10,7 +9,7 @@ export class PersonalareaComponent {
   username: string = '';
   email:string="";
   MyRouter:Router;
-  constructor(private http: HttpClient, router: Router,) { this.MyRouter=router;}
+  constructor(router: Router,) { this.MyRouter=router;}
   ngOnInit() {
     const currentUser = JSON.parse(localStorage.getItem('currentUser') || '{}');
     this.username = currentUser.username;
