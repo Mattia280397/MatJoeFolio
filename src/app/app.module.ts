@@ -11,9 +11,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
-import { PreventiveComponent } from './preventive/preventive.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { PaymentComponent } from './payment/payment.component';
+import { PersonalareaModule } from './personalarea/personalarea.module';
 
 @NgModule({
   declarations: [
@@ -24,8 +23,6 @@ import { PaymentComponent } from './payment/payment.component';
     FooterComponent,
     HomeComponent,
     ContactUsComponent,
-    PreventiveComponent,
-    PaymentComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +31,7 @@ import { PaymentComponent } from './payment/payment.component';
     NgbModule,
     HttpClientModule,
     LoginModule,
+    PersonalareaModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent],
